@@ -1,0 +1,9 @@
+{
+  "name": "expressapi",
+  "version": "1.0.0",
+  "description": "express api",
+  "main": "index.js",
+  "repository": "git@github.com:mhgarry/nautours-api-nodejs-course.git",
+  "author": "mhgarry92 <mhgarry92@gmail.com>",
+  "license": "MIT"
+}
