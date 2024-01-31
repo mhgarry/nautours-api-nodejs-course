@@ -1,15 +1,22 @@
-const express = require('express');
+const express = require("express");
 const PORT = process.env.PORT || 8888;
+const fs = require("fs");
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.status(200).json({message: 'Hello from the server!', app: 'Express Apis'});
+const tours = JSON.parse(
+  fs.readFileSync(`${__dirname}/dev-data/data/tours-simple.json`)
+);
+
+app.get("/api/v1/tours", (req, res) => {
+  res.status(200).json({
+    status: "success",
+    data: {
+      tours,
+    },
+  });
 });
 
-app.post('/', (req, res) => {
-    res.status(200).json({message: 'Hello from the server!', app: 'Post Apis'})
-});
 app.listen(PORT, () => {
-        console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
