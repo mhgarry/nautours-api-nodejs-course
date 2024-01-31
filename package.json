@@ -1,20 +1,20 @@
 {
-  "name": "expressapi",
+  "name": "nodeproject",
   "version": "1.0.0",
-  "description": "express api",
+  "description": "",
   "main": "app.js",
-  "repository": "git@github.com:mhgarry/nautours-api-nodejs-course.git",
-  "author": "mhgarry92 <mhgarry92@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
-  },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
-  }
+    "nodemon": "^3.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
